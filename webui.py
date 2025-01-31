@@ -6,9 +6,7 @@ from id_structs import IdKeypoints
 from id_utils import perspective_transform_from_kpts
 import re
 
-# extractor = IdExtractor("./models/id_kpt_mutli_v1.0.pt", "./models/id_ki.pt")
-extractor = IdExtractor("./models/id_kpt_mutli_v1.0.pt", "./models/id_ki.pt")
-# extractor = IdExtractor("./models/id_kpt.pt", "./models/id_ki.pt")
+extractor = IdExtractor("./models/id_kpt.pt", "./models/id_ki.pt")
 
 def remove_addr_prefix(text):
     """Remove everything before and including the first colon (:)."""
